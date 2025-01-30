@@ -34,12 +34,12 @@
         "name": "electricae radialem",
         "atmosphere": "helium",
         "low_g": true,
-        "nebulae": true,
+        "nebula": true,
         "value": 6284600
     }, {
         "name": "bacterium nebulus",
         "atmosphere": "helium",
-        "nebulae": true,
+        "nebula": true,
         "value": 5289900
     }, {
         "name": "electricae pluma",
@@ -52,7 +52,7 @@
         "name": "electricae radialem",
         "atmosphere": ["neon", "neon-rich"],
         "low_g": true,
-        "nebulae": true,
+        "nebula": true,
         "value": 6284600
     }, {
         "name": "fonticula segmentus",
@@ -89,7 +89,7 @@
         "name": "electricae radialem",
         "atmosphere": ["argon", "argon-rich"],
         "low_g": true,
-        "nebulae": true,
+        "nebula": true,
         "value": 6284600
     }, {
         "name": "fonticulua campestris",

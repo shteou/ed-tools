@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+        <style>
+            .component { 
+                margin: 10px
+            }
+        </style>
+        <script src="https://unpkg.com/mithril/mithril.js"></script>
+        <title>The Germ Finder General</title>
+    </head>
+    <body>
+        <script>
+	var root = document.body;
+
+
+
+    const Checkbox = {
+        view: ({ attrs }) =>
+            m("div.component", [
+                m("h3", attrs.title),
+                m("div.cs-checkbox", [
+                    m("input#checkbox", { type: "checkbox" }),
+                    m("label.cs-checkbox__label", { for: "checkbox" }, "< 0.27G")
+                ])
+            ])
+    };
+
+    const Select = {
+        view: ({ attrs }) =>
+            m("div.component", [
+                m("h3", attrs.title ),
+                m("label.cs-select__label", { for: attrs.id || "cars" }, attrs.label || "Choose:"),
+                m("select.cs-select", {
+                    name: attrs.name,
+                    id: attrs.id,
+                    onchange: attrs.onchange || (() => {}) }, 
+                    (attrs.options || []).map(option =>
+                        m("option", { value: option.value }, option.label)
+                    )
+                )
+        ]),
+    };
+
+    const Tabs = {
+        view: ({ attrs }) =>
+            m("div.component", [
+                m("div.cs-tabs", attrs.tabs.map((tab, index) => [
+                    m("input.radiotab", { 
+                        type: "radio", 
+                        id: `tab${index}`, 
+                        name: "tabs", 
+                        tabindex: 1, 
+                        checked: index === 0 ? "checked" : null 
+                    }),
+                    m("label.label", { for: `tab${index}` }, tab.title),
+                    m("div.panel", { tabindex: 1 }, [
+                        m("p", tab.content)
+                    ])
+                ]))
+            ])
+        };
+
+    const App = {
+        filter_species: () => {
+            let filters = App.data;
+            let conditions = App.conditions;
+
+            if (conditions === undefined) {
+                return "";
+            }
+
+            // Filter out A type requirements if not A type star
+            conditions = conditions.filter((x) => x.star_type === undefined || x.star_type == filters.star_type)
+
+            // Filter out volcanism if not of right volcanism type
+            conditions = conditions.filter((x) => x.volcanism === undefined || x.volcanism.includes(filters.volcanism) )
+
+            return conditions.map((x) => m("p", x.name + " - " + x.value));
+        },
+        data: {},
+        view: () => m(
+            "div", [
+                m("h2", "The Germ Finder General"),
+                m(Select, {
+                    title: "Star Type",
+                    options: [
+                        { value: "other", label: "Other" },
+                        { value: "A", label: "A" }
+                    ],
+                    oninit: () => App.data.star_type = "other",
+                    onchange: (e) => {
+                        App.data.star_type = e.target.value;
+                        m.redraw()
+                    }
+                }),
+                m(Select, {
+                    title: "Body Atmosphere",
+                    options: [
+                        { value: "helium", label: "Helium" },
+                        { value: "neon", label: "Neon" },
+                        { value: "neon-rich", label: "Neon-rich" }
+                    ]
+                }),
+                m(Select, {
+                    title: "Body Volcanism",
+                    options: [
+                        { value: "none", label: "None" },
+                        { value: "water", label: "Water" },
+                        { value: "carbon", label: "Carbon" },
+                        { value: "methane", label: "Methane" },
+                        { value: "silicate", label: "Silicate" },
+                        { value: "iron", label: "Iron" },
+                        { value: "rocky", label: "Rocky" },
+                        { value: "helium", label: "Helium" },
+                        { value: "ammonia", label: "Ammonia" }
+                    ],
+                    oninit: () => App.data.star_type = "other",
+                    onchange: (e) => {
+                        App.data.volcanism = e.target.value;
+                        m.redraw()
+                    }
+                }),
+                m(Checkbox, {
+                    title: "Gravity"
+                }),
+                m(Tabs, {
+                    tabs: [
+                        { title: "Possible xenobiology", content: App.filter_species() },
+                    ]
+                })
+            ]
+        )
+    }
+
+    m.mount(root, App)
+
+    fetch("conditions.json").then(
+        response => response.json()
+    ).then(data => {
+        App.conditions = data;
+        App.render()
+    })
+
+	    </script>
+    </body>
+</html>

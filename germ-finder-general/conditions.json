@@ -1,0 +1,87 @@
+[
+    {
+        "name": "fumerola aquatis",
+        "atmosphere": "any",
+        "low_g": true,
+        "volcanism": ["water"],
+        "value": 6284600
+    }, {
+        "name": "fumerola carbosis",
+        "atmosphere": "any",
+        "low_g": true,
+        "volcanism": ["carbon", "methane"],
+        "value": 6284600
+    }, {
+        "name": "fumerola extremus",
+        "atmosphere": "any",
+        "low_g": true,
+        "volcanism": ["silicate", "iron", "rocky"],
+        "value": 16202800
+    }, {
+        "name": "fumerola nitris",
+        "atmosphere": "any",
+        "low_g": true,
+        "volcanism": ["nitrogen", "ammonia"],
+        "value": 7500900
+    }, {
+        "name": "bacterium tela",
+        "atmosphere": "any",
+        "volcanism": ["helium", "iron", "silicate", "ammonia"],
+        "value": 1949000
+    }, {
+        "name": "electricae pluma",
+        "atmosphere": "helium",
+        "low_g": true,
+        "star_type": ["A"],
+        "luminosity": ["V+"],
+        "value": 6284600
+    }, {
+        "name": "electricae radialem",
+        "atmosphere": "helium",
+        "low_g": true,
+        "nebulae": true,
+        "value": 6284600
+    }, {
+        "name": "bacterium nebulus",
+        "atmosphere": "helium",
+        "nebulae": true,
+        "value": 5289900
+    }, {
+        "name": "electricae pluma",
+        "atmosphere": ["neon", "neon-rich"],
+        "low_g": true,
+        "star_type": ["A"],
+        "luminosity": ["V+"],
+        "value": 6284600
+    }, {
+        "name": "electricae radialem",
+        "atmosphere": ["neon", "neon-rich"],
+        "low_g": true,
+        "nebulae": true,
+        "value": 6284600
+    }, {
+        "name": "fonticula segmentus",
+        "atmosphere": ["neon", "neon-rich"],
+        "low_g": true,
+        "value": 19010800
+    }, {
+        "name": "bacterium acies",
+        "atmosphere": ["neon", "neon-rich"],
+        "value": 1000000
+    }, {
+        "name": "bacterium verrata",
+        "atmosphere": ["neon", "neon-rich"],
+        "volcanism": ["water"],
+        "value": 3897000
+    }, {
+        "name": "bacterium omentum",
+        "atmosphere": ["neon", "neon-rich"],
+        "volcanism": ["nitrogen", "ammonium"],
+        "value": 4638900
+    }, {
+        "name": "bacterium scopulum",
+        "atmosphere": ["neon", "neon-rich"],
+        "volcanism": ["carbon", "methane"],
+        "value": 4934500
+    }
+]

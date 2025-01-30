@@ -152,13 +152,11 @@
         )
     }
 
-    m.mount(root, App)
-
     fetch("conditions.json").then(
         response => response.json()
     ).then(data => {
         App.conditions = data;
-        App.render()
+        m.mount(root, App)
     })
 
 	    </script>

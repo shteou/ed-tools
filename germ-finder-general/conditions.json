@@ -149,5 +149,35 @@
         "name": "bacterium bullaris",
         "atmosphere": ["methane", "methane-rich"],
         "value": 1152500
+    }, {
+        "name": "concha biconcavis",
+        "atmosphere": ["nitrogen"],
+        "low_g": true,
+        "value": 19010800
+    }, {
+        "name": "fonticulua lapida",
+        "atmosphere": ["nitrogen"],
+        "planet": ["icy", "rocky ice"],
+        "low_g": true,
+        "value": 3111000
+    }, {
+        "name": "bacterium informem",
+        "atmosphere": ["nitrogen"],
+        "value": 8418000
+    }, {
+        "name": "foticulua fluctus",
+        "atmosphere": ["oxygen"],
+        "planet": ["icy", "rocky ice"],
+        "low_g": true,
+        "value": 20000000
+    }, {
+        "name": "bacterium volu",
+        "atmosphere": ["oxygen"],
+        "value": 7774700
+    }, {
+        "name": "stratum tectonicas",
+        "atmosphere": "oxygen",
+        "planet": ["high metal content"],
+        "temperature_min": 165
     }
 ]

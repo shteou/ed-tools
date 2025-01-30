@@ -13,18 +13,16 @@
         <script>
 	var root = document.body;
 
-
-
     const Checkbox = {
         view: ({ attrs }) =>
             m("div.component", [
                 m("h3", attrs.title),
                 m("div.cs-checkbox", [
-                    m("input#checkbox", {
+                    m("input#" + attrs.id, {
                         type: "checkbox",
                         onchange: attrs.onchange || (() => {})
                     }),
-                    m("label.cs-checkbox__label", { for: "checkbox" }, "< 0.27G")
+                    m("label.cs-checkbox__label", { for: attrs.id }, attrs.label)
                 ])
             ])
     };
@@ -82,7 +80,10 @@
             ).filter(
                 (x) => x.atmosphere === undefined || x.atmosphere.includes(filters.atmosphere)
             ).filter(
+                // Filter out low gravity (<0.27G) species
                 (x) => x.low_g === undefined || (x.low_g === true && filters.low_g)
+            ).filter(
+                (x) => x.nebula === undefined || (x.nebula === true && filters.nebula)
             )
 
             return conditions.map((x) => m("p", x.name + " - " + x.value));
@@ -103,6 +104,16 @@
                         m.redraw()
                     }
                 }),
+                m(Checkbox, {
+                    title: "Nebula",
+                    id: "nebula",
+                    label: "Is in nebula?",
+                    oninit: () => App.data.nebula = false,
+                    onchange: (e) => {
+                        App.data.nebula = e.target.checked;
+                        m.redraw()
+                    }
+                }),
                 m(Select, {
                     title: "Body Atmosphere",
                     options: [
@@ -110,7 +121,7 @@
                         { value: "neon", label: "Neon" },
                         { value: "neon-rich", label: "Neon-rich" }
                     ],
-                    oninit: () => App.data.atmosphere = "none",
+                    oninit: () => App.data.atmosphere = "helium",
                     onchange: (e) => {
                         App.data.atmosphere = e.target.value;
                         m.redraw()
@@ -137,6 +148,8 @@
                 }),
                 m(Checkbox, {
                     title: "Gravity",
+                    id: "gravity",
+                    label: "<0.27G?",
                     oninit: () => App.data.low_g = false,
                     onchange: (e) => {
                         App.data.low_g = e.target.checked;

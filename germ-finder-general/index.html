@@ -85,7 +85,7 @@
                 (x) => x.low_g === undefined || (x.low_g === true && filters.low_g)
             )
 
-            return conditions.map((x) => m("p", x.name + " - " + x.value));
+            return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString()));
         },
         data: {},
         view: () => m(

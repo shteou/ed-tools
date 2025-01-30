@@ -78,5 +78,51 @@
         "atmosphere": ["neon", "neon-rich"],
         "volcanism": ["carbon", "methane"],
         "value": 4934500
+    }, {
+        "name": "electricae pluma",
+        "atmosphere": ["argon", "argon-rich"],
+        "low_g": true,
+        "star_type": ["A"],
+        "luminosity": ["V+"],
+        "value": 6284600
+    }, {
+        "name": "electricae radialem",
+        "atmosphere": ["argon", "argon-rich"],
+        "low_g": true,
+        "nebulae": true,
+        "value": 6284600
+    }, {
+        "name": "fonticulua campestris",
+        "atmosphere": ["argon"],
+        "planet": ["icy", "rocky-ice"],
+        "low_g": true,
+        "value": 1000000
+    }, {
+        "name": "fonticulua upupam",
+        "atmosphere": ["argon-rich"],
+        "planet": ["icy", "rocky-ice"],
+        "low_g": true,
+        "value": 5727600
+    }, {
+        "name": "fungoida bullarum",
+        "atmosphere": ["argon", "argon-rich"],
+        "low_g": true,
+        "value": 3703200
+    }, {
+        "name": "osseus pumic",
+        "atmosphere": ["argon", "argon-rich"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "value": 3156300
+    }, {
+        "name": "tussock capillum",
+        "atmosphere": ["argon", "argon-rich"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "value": 7025800
+    }, {
+        "name": "bacterium vesicula",
+        "atmosphere": ["argon", "argon-rich"],
+        "value": 1000000
     }
 ]

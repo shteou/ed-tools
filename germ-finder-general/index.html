@@ -86,7 +86,7 @@
                 (x) => x.nebula === undefined || (x.nebula === true && filters.nebula)
             )
 
-            return conditions.map((x) => m("p", x.name + " - " + x.value));
+            return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString()));
         },
         data: {},
         view: () => m(

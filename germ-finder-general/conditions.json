@@ -55,7 +55,7 @@
         "nebula": true,
         "value": 6284600
     }, {
-        "name": "fonticula segmentus",
+        "name": "fonticulua segmentus",
         "atmosphere": ["neon", "neon-rich"],
         "low_g": true,
         "value": 19010800
@@ -109,9 +109,8 @@
         "low_g": true,
         "value": 3703200
     }, {
-        "name": "osseus pumic",
+        "name": "osseus pumice",
         "atmosphere": ["argon", "argon-rich"],
-        "planet": ["rocky"],
         "low_g": true,
         "value": 3156300
     }, {

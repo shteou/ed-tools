@@ -1,96 +1,99 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
-        <style>
-            .component { 
-                margin: 10px
-            }
-        </style>
-        <script src="https://unpkg.com/mithril/mithril.js"></script>
-        <title>The Germ Finder General</title>
-    </head>
-    <body>
-        <script>
-	var root = document.body;
 
-    const Checkbox = {
-        view: ({ attrs }) =>
-            m("div.component", [
-                m("h3", attrs.title),
-                m("div.cs-checkbox", [
-                    m("input#" + attrs.id, {
-                        type: "checkbox",
-                        onchange: attrs.onchange || (() => {})
-                    }),
-                    m("label.cs-checkbox__label", { for: attrs.id }, attrs.label)
-                ])
-            ])
-    };
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+    <style>
+        .component {
+            margin: 10px
+        }
+    </style>
+    <script src="https://unpkg.com/mithril/mithril.js"></script>
+    <title>The Germ Finder General</title>
+</head>
 
-    const Select = {
-        view: ({ attrs }) =>
-            m("div.component", [
-                m("h3", attrs.title ),
-                m("label.cs-select__label", { for: attrs.id || "cars" }, attrs.label || "Choose:"),
-                m("select.cs-select", {
-                    name: attrs.name,
-                    id: attrs.id,
-                    onchange: attrs.onchange || (() => {}) }, 
-                    (attrs.options || []).map(option =>
-                        m("option", { value: option.value }, option.label)
-                    )
-                )
-        ]),
-    };
+<body>
+    <script>
+        var root = document.body;
 
-    const Tabs = {
-        view: ({ attrs }) =>
-            m("div.component", [
-                m("div.cs-tabs", attrs.tabs.map((tab, index) => [
-                    m("input.radiotab", { 
-                        type: "radio", 
-                        id: `tab${index}`, 
-                        name: "tabs", 
-                        tabindex: 1, 
-                        checked: index === 0 ? "checked" : null 
-                    }),
-                    m("label.label", { for: `tab${index}` }, tab.title),
-                    m("div.panel", { tabindex: 1 }, [
-                        m("p", tab.content)
+        const Checkbox = {
+            view: ({ attrs }) =>
+                m("div.component", [
+                    m("h3", attrs.title),
+                    m("div.cs-checkbox", [
+                        m("input#" + attrs.id, {
+                            type: "checkbox",
+                            onchange: attrs.onchange || (() => { })
+                        }),
+                        m("label.cs-checkbox__label", { for: attrs.id }, attrs.label)
                     ])
-                ]))
-            ])
+                ])
         };
 
-    const App = {
-        filter_species: () => {
-            let filters = App.data;
-            let conditions = App.conditions;
+        const Select = {
+            view: ({ attrs }) =>
+                m("div.component", [
+                    m("h3", attrs.title),
+                    m("label.cs-select__label", { for: attrs.id || "cars" }, attrs.label || "Choose:"),
+                    m("select.cs-select", {
+                        name: attrs.name,
+                        id: attrs.id,
+                        onchange: attrs.onchange || (() => { })
+                    },
+                        (attrs.options || []).map(option =>
+                            m("option", { value: option.value }, option.label)
+                        )
+                    )
+                ]),
+        };
 
-            if (conditions === undefined) {
-                return "";
-            }
+        const Tabs = {
+            view: ({ attrs }) =>
+                m("div.component", [
+                    m("div.cs-tabs", attrs.tabs.map((tab, index) => [
+                        m("input.radiotab", {
+                            type: "radio",
+                            id: `tab${index}`,
+                            name: "tabs",
+                            tabindex: 1,
+                            checked: index === 0 ? "checked" : null
+                        }),
+                        m("label.label", { for: `tab${index}` }, tab.title),
+                        m("div.panel", { tabindex: 1 }, [
+                            m("p", tab.content)
+                        ])
+                    ]))
+                ])
+        };
 
-            conditions = conditions.filter(
-                // Filter out A type requirements if not A type star
-                (x) => x.star_type === undefined || x.star_type == filters.star_type
-            ).filter(
-                // Filter out volcanism if not of right volcanism type
-                (x) => x.volcanism === undefined || x.volcanism.includes(filters.volcanism)
-            ).filter(
-                (x) => x.atmosphere === undefined || x.atmosphere.includes(filters.atmosphere)
-            ).filter(
-                // Filter out low gravity (<0.27G) species
-                (x) => x.low_g === undefined || (x.low_g === true && filters.low_g)
-            ).filter(
-                (x) => x.nebula === undefined || (x.nebula === true && filters.nebula)
-            )
+        const App = {
+            filter_species: () => {
+                let filters = App.data;
+                let conditions = App.conditions;
 
-            return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString()));
-        },
-        data: {},
-        view: () => m(
-            "div", [
+                if (conditions === undefined) {
+                    return "";
+                }
+
+                conditions = conditions.filter(
+                    // Filter out A type requirements if not A type star
+                    (x) => x.star_type === undefined || x.star_type == filters.star_type
+                ).filter(
+                    // Filter out volcanism if not of right volcanism type
+                    (x) => x.volcanism === undefined || x.volcanism.includes(filters.volcanism)
+                ).filter(
+                    (x) => x.atmosphere === undefined || x.atmosphere.includes(filters.atmosphere)
+                ).filter(
+                    // Filter out low gravity (<0.27G) species
+                    (x) => x.low_g === undefined || (x.low_g === true && filters.low_g)
+                ).filter(
+                    (x) => x.nebula === undefined || (x.nebula === true && filters.nebula)
+                )
+
+                return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString()));
+            },
+            data: {},
+            view: () => m(
+                "div", [
                 m("h2", "The Germ Finder General"),
                 m(Select, {
                     title: "Star Type",
@@ -162,16 +165,17 @@
                     ]
                 })
             ]
-        )
-    }
+            )
+        }
 
-    fetch("conditions.json").then(
-        response => response.json()
-    ).then(data => {
-        App.conditions = data;
-        m.mount(root, App)
-    })
+        fetch("conditions.json").then(
+            response => response.json()
+        ).then(data => {
+            App.conditions = data;
+            m.mount(root, App)
+        })
 
-	    </script>
-    </body>
+    </script>
+</body>
+
 </html>

@@ -124,5 +124,31 @@
         "name": "bacterium vesicula",
         "atmosphere": ["argon", "argon-rich"],
         "value": 1000000
+    }, {
+        "name": "fonticulua digitos",
+        "atmosphere": ["methane", "methane-rich"],
+        "planet": ["icy", "rocky ice"],
+        "low_g": true,
+        "value": 1804100
+    }, {
+        "name": "fungoida setisis",
+        "atmosphere": ["methane", "methane-rich"],
+        "low_g": true,
+        "value": 1670100
+    }, {
+        "name": "osseus pumice",
+        "atmosphere": ["methane", "methane-rich"],
+        "low_g": true,
+        "value": 3156300
+    }, {
+        "name": "tussock capillum",
+        "atmosphere": ["methane", "methane-rich"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "value": 7025800
+    }, {
+        "name": "bacterium bullaris",
+        "atmosphere": ["methane", "methane-rich"],
+        "value": 1152500
     }
 ]

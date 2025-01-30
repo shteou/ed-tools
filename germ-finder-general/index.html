@@ -116,11 +116,11 @@
                 }),
                 m(Select, {
                     title: "Body Atmosphere",
-                    options: [
-                        { value: "helium", label: "Helium" },
-                        { value: "neon", label: "Neon" },
-                        { value: "neon-rich", label: "Neon-rich" }
-                    ],
+                    options: [... new Set(App.conditions.map(
+                        (x) => x.atmosphere
+                    ).flat())].map((x) => {
+                        return { value: x, label: x }
+                    }),
                     oninit: () => App.data.atmosphere = "helium",
                     onchange: (e) => {
                         App.data.atmosphere = e.target.value;

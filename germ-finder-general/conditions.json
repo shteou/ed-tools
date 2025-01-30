@@ -1,31 +1,26 @@
 [
     {
         "name": "fumerola aquatis",
-        "atmosphere": "any",
         "low_g": true,
         "volcanism": ["water"],
         "value": 6284600
     }, {
         "name": "fumerola carbosis",
-        "atmosphere": "any",
         "low_g": true,
         "volcanism": ["carbon", "methane"],
         "value": 6284600
     }, {
         "name": "fumerola extremus",
-        "atmosphere": "any",
         "low_g": true,
         "volcanism": ["silicate", "iron", "rocky"],
         "value": 16202800
     }, {
         "name": "fumerola nitris",
-        "atmosphere": "any",
         "low_g": true,
         "volcanism": ["nitrogen", "ammonia"],
         "value": 7500900
     }, {
         "name": "bacterium tela",
-        "atmosphere": "any",
         "volcanism": ["helium", "iron", "silicate", "ammonia"],
         "value": 1949000
     }, {

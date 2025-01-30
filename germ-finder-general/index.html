@@ -20,7 +20,10 @@
             m("div.component", [
                 m("h3", attrs.title),
                 m("div.cs-checkbox", [
-                    m("input#checkbox", { type: "checkbox" }),
+                    m("input#checkbox", {
+                        type: "checkbox",
+                        onchange: attrs.onchange || (() => {})
+                    }),
                     m("label.cs-checkbox__label", { for: "checkbox" }, "< 0.27G")
                 ])
             ])
@@ -70,11 +73,17 @@
                 return "";
             }
 
-            // Filter out A type requirements if not A type star
-            conditions = conditions.filter((x) => x.star_type === undefined || x.star_type == filters.star_type)
-
-            // Filter out volcanism if not of right volcanism type
-            conditions = conditions.filter((x) => x.volcanism === undefined || x.volcanism.includes(filters.volcanism) )
+            conditions = conditions.filter(
+                // Filter out A type requirements if not A type star
+                (x) => x.star_type === undefined || x.star_type == filters.star_type
+            ).filter(
+                // Filter out volcanism if not of right volcanism type
+                (x) => x.volcanism === undefined || x.volcanism.includes(filters.volcanism)
+            ).filter(
+                (x) => x.atmosphere === undefined || x.atmosphere.includes(filters.atmosphere)
+            ).filter(
+                (x) => x.low_g === undefined || (x.low_g === true && filters.low_g)
+            )
 
             return conditions.map((x) => m("p", x.name + " - " + x.value));
         },
@@ -100,7 +109,12 @@
                         { value: "helium", label: "Helium" },
                         { value: "neon", label: "Neon" },
                         { value: "neon-rich", label: "Neon-rich" }
-                    ]
+                    ],
+                    oninit: () => App.data.atmosphere = "none",
+                    onchange: (e) => {
+                        App.data.atmosphere = e.target.value;
+                        m.redraw()
+                    }
                 }),
                 m(Select, {
                     title: "Body Volcanism",
@@ -122,7 +136,12 @@
                     }
                 }),
                 m(Checkbox, {
-                    title: "Gravity"
+                    title: "Gravity",
+                    oninit: () => App.data.low_g = false,
+                    onchange: (e) => {
+                        App.data.low_g = e.target.checked;
+                        m.redraw()
+                    }
                 }),
                 m(Tabs, {
                     tabs: [

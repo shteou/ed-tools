@@ -227,5 +227,115 @@
         "atmosphere": ["sulphur dioxide"],
         "planet": ["high metal content"],
         "temp_min": 165
+    }, {
+        "name": "cactoida vermis",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "clypeus lacrimam",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "clypeus margaritus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "clypeus speculumi",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "dist_min": 2500
+    }, {
+        "name": "concha renibus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "frutexa sponsae",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "fungoida gelata",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "fungoida stabitis",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "osseus discus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "tussock virgam",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "low_g": true
+    }, {
+        "name": "bacterium cerbrus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"]
+    }, {
+        "name": "stratum paleas",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["rocky"],
+        "temp_min": 165
+    }, {
+        "name": "cactoida vermis",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true
+    }, {
+        "name": "clypeus lacrimam",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true
+    }, {
+        "name": "clypeus margaritus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true
+    }, {
+        "name": "clypeus speculumi",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true,
+        "dist_min": 2500
+    }, {
+        "name": "concha renibus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true
+    }, {
+        "name": "fungoida gelata",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true
+    }, {
+        "name": "fungoida stabitis",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true
+    }, {
+        "name": "osseus discus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "low_g": true
+    }, {
+        "name": "bacterium cerbrus",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"]
+    }, {
+        "name": "stratum tectonicas",
+        "atmosphere": ["water", "water-rich"],
+        "planet": ["high metal content"],
+        "temp_min": 165
     }
 ]

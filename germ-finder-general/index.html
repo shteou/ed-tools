@@ -110,7 +110,7 @@
                     (x) => x.temp_min === undefined || x.temp_min <= filters.temp_min
                 )
 
-                return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString()));
+                return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString() + " (" + (x.value*5).toLocaleString() + ")"));
             },
             data: {},
             view: () => m(

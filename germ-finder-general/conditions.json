@@ -180,5 +180,102 @@
         "planet": ["high metal content"],
         "temp_min": 165,
         "value": 19010800
+    }, {
+        "name": "recepta umbrux",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["icy", "rocky ice"],
+        "low_g": true,
+        "value": 12934900
+    }, {
+        "name": "recepta conditivus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["icy", "rocky ice"],
+        "low_g": true,
+        "value": 14313700
+    }, {
+        "name": "bacterium cerbrus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["icy", "rocky ice"],
+        "value": 1689800
+    }, {
+        "name": "frutexa collum",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "value": 1639800
+    }, {
+        "name": "recepta deltahedronix",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "value": 16202800
+    }, {
+        "name": "recepta umbrux",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "value": 12934900
+    }, {
+        "name": "tussock stigmasis",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "low_g": true,
+        "value": 19010800
+    }, {
+        "name": "bacterium cerbrus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "value": 1689800
+    }, {
+        "name": "stratum araneamus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "temp_min": 165,
+        "value": 2448900
+    }, {
+        "name": "stratum excutitus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "temp_min": 165,
+        "value": 2448900
+    }, {
+        "name": "stratum limaxus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "temp_min": 165,
+        "value": 1362000
+    }, {
+        "name": "stratum frigus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "temp_min": 190,
+        "value": 2637500
+    }, {
+        "name": "stratum cucumisis",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["rocky"],
+        "temp_min": 190,
+        "value": 16202800
+    }, {
+        "name": "recepta deltahedronix",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["high metal content"],
+        "value": 16202800
+    }, {
+        "name": "recepta umbrux",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["high metal content"],
+        "value": 12934900
+    }, {
+        "name": "bacterium cerbrus",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["high metal content"],
+        "value": 1689800
+    }, {
+        "name": "stratum tectonicas",
+        "atmosphere": ["sulphur dioxide"],
+        "planet": ["high metal content"],
+        "temp_min": 165,
+        "value": 19010800
     }
 ]

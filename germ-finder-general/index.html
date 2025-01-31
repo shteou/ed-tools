@@ -106,6 +106,9 @@
                 ).filter(
                     // Filter minimum temperature
                     (x) => x.temp_min === undefined || x.temp_min <= filters.temp_min
+                ).filter(
+                    // Filter minimum distance
+                    (x) => x.dist_min === undefined || x.dist_min <= filters.distance
                 )
 
                 return conditions.map((x) => m("p", x.name + " - " + App.values[x.name].toLocaleString() + " (" + (App.values[x.name] * 5).toLocaleString() + ")"));
@@ -115,6 +118,7 @@
                 "div.component", [
                 m("h1", "The Germ Finder General"),
                 m("p", "An Elite Dangerous exo-biology tool"),
+                m("p", "Filter available species by the conditions of a specific system and planetary body"),
                 m("h2", "Star System"),
                 m(Select, {
                     options: [
@@ -168,6 +172,15 @@
                     label: "Minimum temperature (K)",
                     onkeyup: (e) => {
                         App.data.temp_min = ~~e.target.value;
+                        m.redraw()
+                    }
+                }),
+                m("h3", "Body Distance"),
+                m(InputField, {
+                    id: "min-dist",
+                    label: "Distance (LS)",
+                    onkeyup: (e) => {
+                        App.data.distance = ~~e.target.value;
                         m.redraw()
                     }
                 }),

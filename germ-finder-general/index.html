@@ -110,7 +110,7 @@
                     (x) => x.temp_min === undefined || x.temp_min <= filters.temp_min
                 )
 
-                return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString() + " (" + (x.value*5).toLocaleString() + ")"));
+                return conditions.map((x) => m("p", x.name + " - " + App.values[x.name].toLocaleString() + " (" + (App.values[x.name]*5).toLocaleString() + ")"));
             },
             data: {},
             view: () => m(
@@ -210,9 +210,14 @@
 
         fetch("conditions.json").then(
             response => response.json()
-        ).then(data => {
-            App.conditions = data;
-            m.mount(root, App)
+        ).then(conditions => {
+            fetch("values.json").then(
+                response => response.json()
+            ).then(values => {
+                App.conditions = conditions;
+                App.values = values
+                m.mount(root, App)
+            })
         })
 
     </script>

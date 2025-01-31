@@ -25,20 +25,20 @@
         "value": 1949000
     }, {
         "name": "electricae pluma",
-        "atmosphere": "helium",
+        "atmosphere": ["helium"],
         "low_g": true,
         "star_type": ["A"],
         "luminosity": ["V+"],
         "value": 6284600
     }, {
         "name": "electricae radialem",
-        "atmosphere": "helium",
+        "atmosphere": ["helium"],
         "low_g": true,
         "nebula": true,
         "value": 6284600
     }, {
         "name": "bacterium nebulus",
-        "atmosphere": "helium",
+        "atmosphere": ["helium"],
         "nebula": true,
         "value": 5289900
     }, {
@@ -178,6 +178,7 @@
         "name": "stratum tectonicas",
         "atmosphere": "oxygen",
         "planet": ["high metal content"],
-        "temperature_min": 165
+        "temperature_min": 165,
+        "value": 19010800
     }
 ]

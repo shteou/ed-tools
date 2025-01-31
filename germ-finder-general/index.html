@@ -81,12 +81,17 @@
                     // Filter out volcanism if not of right volcanism type
                     (x) => x.volcanism === undefined || x.volcanism.includes(filters.volcanism)
                 ).filter(
+                    // Filter out species by planetary atmosphere type
                     (x) => x.atmosphere === undefined || x.atmosphere.includes(filters.atmosphere)
                 ).filter(
                     // Filter out low gravity (<0.27G) species
                     (x) => x.low_g === undefined || (x.low_g === true && filters.low_g)
                 ).filter(
+                    // Filter out if system is local to a nebula
                     (x) => x.nebula === undefined || (x.nebula === true && filters.nebula)
+                ).filter(
+                    // Filter out based on planetary type
+                    (x) => x.planet === undefined || x.planet.includes(filters.planet)
                 )
 
                 return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString()));
@@ -124,9 +129,21 @@
                     ).flat())].map((x) => {
                         return { value: x, label: x }
                     }),
-                    oninit: () => App.data.atmosphere = "helium",
+                    oninit: () => App.data.atmosphere = "",
                     onchange: (e) => {
                         App.data.atmosphere = e.target.value;
+                        m.redraw()
+                    }
+                }),
+                m(Select, {
+                    title: "Body Type",
+                    options: [... new Set(App.conditions.map(
+                        (x) => x.planet
+                    ).flat())].map((x) => {
+                        return { value: x, label: x }
+                    }),
+                    onchange: (e) => {
+                        App.data.planet = e.target.value;
                         m.redraw()
                     }
                 }),

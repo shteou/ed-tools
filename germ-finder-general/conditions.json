@@ -39,7 +39,6 @@
     }, {
         "name": "bacterium nebulus",
         "atmosphere": ["helium"],
-        "nebula": true,
         "value": 5289900
     }, {
         "name": "electricae pluma",

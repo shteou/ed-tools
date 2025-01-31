@@ -176,9 +176,9 @@
         "value": 7774700
     }, {
         "name": "stratum tectonicas",
-        "atmosphere": "oxygen",
+        "atmosphere": ["oxygen"],
         "planet": ["high metal content"],
-        "temperature_min": 165,
+        "temp_min": 165,
         "value": 19010800
     }
 ]

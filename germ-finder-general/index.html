@@ -15,6 +15,19 @@
     <script>
         var root = document.body;
 
+        const InputField = {
+            view: ({ attrs }) =>
+                m("div.component", [
+                    m("input.cs-input", {
+                        id: "input",
+                        type: "text",
+                        onchange: attrs.onchange || (() => { }),
+                        onkeyup: attrs.onkeyup || (() => { })
+                    }),
+                    m("label.cs-input__label", { for: "input" }, attrs.title)
+                ])
+        };
+
         const Checkbox = {
             view: ({ attrs }) =>
                 m("div.component", [
@@ -92,6 +105,9 @@
                 ).filter(
                     // Filter out based on planetary type
                     (x) => x.planet === undefined || x.planet.includes(filters.planet)
+                ).filter(
+                    // Filter minimum temperature
+                    (x) => x.temp_min === undefined || x.temp_min <= filters.temp_min
                 )
 
                 return conditions.map((x) => m("p", x.name + " - " + x.value.toLocaleString()));
@@ -144,6 +160,13 @@
                     }),
                     onchange: (e) => {
                         App.data.planet = e.target.value;
+                        m.redraw()
+                    }
+                }),
+                m(InputField, {
+                    title: "Minimum Temperature",
+                    onkeyup: (e) => {
+                        App.data.temp_min = ~~e.target.value;
                         m.redraw()
                     }
                 }),

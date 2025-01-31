@@ -19,19 +19,18 @@
             view: ({ attrs }) =>
                 m("div.component", [
                     m("input.cs-input", {
-                        id: "input",
+                        id: attrs.id,
                         type: "text",
                         onchange: attrs.onchange || (() => { }),
                         onkeyup: attrs.onkeyup || (() => { })
                     }),
-                    m("label.cs-input__label", { for: "input" }, attrs.title)
+                    m("label.cs-input__label", { for: "input" }, attrs.label)
                 ])
         };
 
         const Checkbox = {
             view: ({ attrs }) =>
                 m("div.component", [
-                    m("h3", attrs.title),
                     m("div.cs-checkbox", [
                         m("input#" + attrs.id, {
                             type: "checkbox",
@@ -45,7 +44,6 @@
         const Select = {
             view: ({ attrs }) =>
                 m("div.component", [
-                    m("h3", attrs.title),
                     m("label.cs-select__label", { for: attrs.id || "cars" }, attrs.label || "Choose:"),
                     m("select.cs-select", {
                         name: attrs.name,
@@ -110,14 +108,15 @@
                     (x) => x.temp_min === undefined || x.temp_min <= filters.temp_min
                 )
 
-                return conditions.map((x) => m("p", x.name + " - " + App.values[x.name].toLocaleString() + " (" + (App.values[x.name]*5).toLocaleString() + ")"));
+                return conditions.map((x) => m("p", x.name + " - " + App.values[x.name].toLocaleString() + " (" + (App.values[x.name] * 5).toLocaleString() + ")"));
             },
             data: {},
             view: () => m(
-                "div", [
-                m("h2", "The Germ Finder General"),
+                "div.component", [
+                m("h1", "The Germ Finder General"),
+                m("p", "An Elite Dangerous exo-biology tool"),
+                m("h2", "Star System"),
                 m(Select, {
-                    title: "Star Type",
                     options: [
                         { value: "other", label: "Other" },
                         { value: "A", label: "A" }
@@ -129,17 +128,17 @@
                     }
                 }),
                 m(Checkbox, {
-                    title: "Nebula",
                     id: "nebula",
-                    label: "Is in nebula?",
+                    label: "Local to a nebula?",
                     oninit: () => App.data.nebula = false,
                     onchange: (e) => {
                         App.data.nebula = e.target.checked;
                         m.redraw()
                     }
                 }),
+                m("h2", "System Body"),
+                m("h3", "Atmosphere"),
                 m(Select, {
-                    title: "Body Atmosphere",
                     options: [... new Set(App.conditions.map(
                         (x) => x.atmosphere
                     ).flat())].map((x) => {
@@ -151,8 +150,8 @@
                         m.redraw()
                     }
                 }),
+                m("h3", "Body Type"),
                 m(Select, {
-                    title: "Body Type",
                     options: [... new Set(App.conditions.map(
                         (x) => x.planet
                     ).flat())].map((x) => {
@@ -163,15 +162,17 @@
                         m.redraw()
                     }
                 }),
+                m("h3", "Temperature range"),
                 m(InputField, {
-                    title: "Minimum Temperature",
+                    id: "min-temp",
+                    label: "Minimum temperature (K)",
                     onkeyup: (e) => {
                         App.data.temp_min = ~~e.target.value;
                         m.redraw()
                     }
                 }),
+                m("h3", "Volcanism Type"),
                 m(Select, {
-                    title: "Body Volcanism",
                     options: [
                         { value: "none", label: "None" },
                         { value: "water", label: "Water" },
@@ -189,8 +190,8 @@
                         m.redraw()
                     }
                 }),
+                m("h3", "Gravity"),
                 m(Checkbox, {
-                    title: "Gravity",
                     id: "gravity",
                     label: "<0.27G?",
                     oninit: () => App.data.low_g = false,
@@ -199,6 +200,7 @@
                         m.redraw()
                     }
                 }),
+                m("h2", "Results"),
                 m(Tabs, {
                     tabs: [
                         { title: "Possible xenobiology", content: App.filter_species() },

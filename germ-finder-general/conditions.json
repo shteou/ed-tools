@@ -260,11 +260,13 @@
         "name": "recepta deltahedronix",
         "atmosphere": ["sulphur dioxide"],
         "planet": ["high metal content"],
+        "low_g": true,
         "value": 16202800
     }, {
         "name": "recepta umbrux",
         "atmosphere": ["sulphur dioxide"],
         "planet": ["high metal content"],
+        "low_g": true,
         "value": 12934900
     }, {
         "name": "bacterium cerbrus",

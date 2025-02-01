@@ -412,7 +412,8 @@
         "planet": [
             "rocky"
         ],
-        "temp_min": 165
+        "temp_min": 165,
+        "temp_max": 190
     },
     {
         "name": "stratum limaxus",
@@ -422,7 +423,8 @@
         "planet": [
             "rocky"
         ],
-        "temp_min": 165
+        "temp_min": 165,
+        "temp_max": 190
     },
     {
         "name": "stratum frigus",
@@ -1058,7 +1060,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 145
+        "temp_min": 145,
+        "temp_max": 155
     },
     {
         "name": "tussock ventusa",
@@ -1070,7 +1073,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 155
+        "temp_min": 155,
+        "temp_max": 160
     },
     {
         "name": "tussock ignis",
@@ -1082,7 +1086,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 160
+        "temp_min": 160,
+        "temp_max": 170
     },
     {
         "name": "tussock serrati",
@@ -1094,7 +1099,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 170
+        "temp_min": 170,
+        "temp_max": 175
     },
     {
         "name": "aleoida arcus",
@@ -1106,7 +1112,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 175
+        "temp_min": 175,
+        "temp_max": 180
     },
     {
         "name": "tussock albata",
@@ -1118,7 +1125,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 175
+        "temp_min": 175,
+        "temp_max": 180
     },
     {
         "name": "aleoida coronamus",
@@ -1130,7 +1138,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 190
     },
     {
         "name": "cactoida cortexum",
@@ -1142,7 +1151,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 195
     },
     {
         "name": "cactoida pullulanta",
@@ -1154,7 +1164,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 195
     },
     {
         "name": "concha renibus",
@@ -1166,7 +1177,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 195
     },
     {
         "name": "fungoida gelata",
@@ -1178,7 +1190,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 195
     },
     {
         "name": "fungoida stabitis",
@@ -1190,7 +1203,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 195
     },
     {
         "name": "osseus cornibus",
@@ -1202,7 +1216,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 195
     },
     {
         "name": "osseus fractus",
@@ -1214,7 +1229,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 190
     },
     {
         "name": "tussock caputus",
@@ -1226,7 +1242,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 180
+        "temp_min": 180,
+        "temp_max": 190
     },
     {
         "name": "tubus cavas",
@@ -1238,7 +1255,8 @@
             "rocky"
         ],
         "g_max": 0.15,
-        "temp_min": 160
+        "temp_min": 160,
+        "temp_max": 190
     },
     {
         "name": "tubus compagibus",
@@ -1250,7 +1268,8 @@
             "rocky"
         ],
         "g_max": 0.15,
-        "temp_min": 160
+        "temp_min": 160,
+        "temp_max": 190
     },
     {
         "name": "tubus conifer",
@@ -1262,7 +1281,8 @@
             "rocky"
         ],
         "g_max": 0.15,
-        "temp_min": 160
+        "temp_min": 160,
+        "temp_max": 190
     },
     {
         "name": "aleoida gravis",
@@ -1274,7 +1294,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 190
+        "temp_min": 190,
+        "temp_max": 195
     },
     {
         "name": "osseus pellebantus",
@@ -1286,7 +1307,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 190
+        "temp_min": 190,
+        "temp_max": 195
     },
     {
         "name": "tussock triticum",
@@ -1298,7 +1320,8 @@
             "rocky"
         ],
         "g_max": 0.27,
-        "temp_min": 190
+        "temp_min": 190,
+        "temp_max": 195
     },
     {
         "name": "clypeus lacrimam",
@@ -1345,8 +1368,7 @@
         ],
         "planet": [
             "rocky"
-        ],
-        "temp_min": 165
+        ]
     },
     {
         "name": "stratum paleas",
@@ -1368,7 +1390,8 @@
         "planet": [
             "rocky"
         ],
-        "temp_min": 165
+        "temp_min": 165,
+        "temp_max": 190
     },
     {
         "name": "stratum limaxus",
@@ -1379,7 +1402,8 @@
         "planet": [
             "rocky"
         ],
-        "temp_min": 165
+        "temp_min": 165,
+        "temp_max": 190
     },
     {
         "name": "stratum frigus",

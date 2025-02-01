@@ -1,14 +1,14 @@
 [
     {
         "name": "fumerola aquatis",
-        "low_g": true,
+        "g_max": 0.27,
         "volcanism": [
             "water"
         ]
     },
     {
         "name": "fumerola carbosis",
-        "low_g": true,
+        "g_max": 0.27,
         "volcanism": [
             "carbon",
             "methane"
@@ -16,7 +16,7 @@
     },
     {
         "name": "fumerola extremus",
-        "low_g": true,
+        "g_max": 0.27,
         "volcanism": [
             "silicate",
             "iron",
@@ -25,7 +25,7 @@
     },
     {
         "name": "fumerola nitris",
-        "low_g": true,
+        "g_max": 0.27,
         "volcanism": [
             "nitrogen",
             "ammonia"
@@ -45,7 +45,7 @@
         "atmosphere": [
             "helium"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "star_type": [
             "A"
         ],
@@ -58,7 +58,7 @@
         "atmosphere": [
             "helium"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "nebula": true
     },
     {
@@ -73,7 +73,7 @@
             "neon",
             "neon-rich"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "star_type": [
             "A"
         ],
@@ -87,7 +87,7 @@
             "neon",
             "neon-rich"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "nebula": true
     },
     {
@@ -96,7 +96,7 @@
             "neon",
             "neon-rich"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium acies",
@@ -143,7 +143,7 @@
             "argon",
             "argon-rich"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "star_type": [
             "A"
         ],
@@ -157,7 +157,7 @@
             "argon",
             "argon-rich"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "nebula": true
     },
     {
@@ -169,7 +169,7 @@
             "icy",
             "rocky-ice"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fonticulua upupam",
@@ -180,7 +180,7 @@
             "icy",
             "rocky-ice"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida bullarum",
@@ -188,7 +188,7 @@
             "argon",
             "argon-rich"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "osseus pumice",
@@ -196,7 +196,7 @@
             "argon",
             "argon-rich"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock capillum",
@@ -207,7 +207,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium vesicula",
@@ -226,7 +226,7 @@
             "icy",
             "rocky ice"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida setisis",
@@ -234,7 +234,7 @@
             "methane",
             "methane-rich"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "osseus pumice",
@@ -242,7 +242,7 @@
             "methane",
             "methane-rich"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock capillum",
@@ -253,7 +253,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium bullaris",
@@ -267,7 +267,7 @@
         "atmosphere": [
             "nitrogen"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fonticulua lapida",
@@ -278,7 +278,7 @@
             "icy",
             "rocky ice"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium informem",
@@ -295,7 +295,7 @@
             "icy",
             "rocky ice"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium volu",
@@ -322,7 +322,7 @@
             "icy",
             "rocky ice"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "recepta conditivus",
@@ -333,7 +333,7 @@
             "icy",
             "rocky ice"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium cerbrus",
@@ -353,7 +353,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "recepta deltahedronix",
@@ -363,7 +363,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "recepta umbrux",
@@ -373,7 +373,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock stigmasis",
@@ -383,7 +383,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium cerbrus",
@@ -452,7 +452,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "recepta umbrux",
@@ -462,7 +462,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium cerbrus",
@@ -492,7 +492,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "clypeus lacrimam",
@@ -503,7 +503,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "clypeus margaritus",
@@ -514,7 +514,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "clypeus speculumi",
@@ -525,7 +525,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "dist_min": 2500
     },
     {
@@ -537,7 +537,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "frutexa sponsae",
@@ -548,7 +548,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida gelata",
@@ -559,7 +559,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida stabitis",
@@ -570,7 +570,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "osseus discus",
@@ -581,7 +581,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock virgam",
@@ -592,7 +592,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium cerbrus",
@@ -624,7 +624,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "clypeus lacrimam",
@@ -635,7 +635,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "clypeus margaritus",
@@ -646,7 +646,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "clypeus speculumi",
@@ -657,7 +657,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "dist_min": 2500
     },
     {
@@ -669,7 +669,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida gelata",
@@ -680,7 +680,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida stabitis",
@@ -691,7 +691,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "osseus discus",
@@ -702,7 +702,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium cerbrus",
@@ -733,7 +733,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "aleoida spica",
@@ -743,7 +743,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "cactoida lapis",
@@ -753,7 +753,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "cactoida peperatis",
@@ -763,7 +763,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "concha aureolas",
@@ -773,7 +773,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "frutexa flabellum",
@@ -783,7 +783,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "frutexa flammasis",
@@ -793,7 +793,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida setisis",
@@ -803,7 +803,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tubus rosarium",
@@ -813,7 +813,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.15
     },
     {
         "name": "osseus spiralis",
@@ -823,7 +823,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock catena",
@@ -833,7 +833,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock cultro",
@@ -843,7 +843,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock divisa",
@@ -853,7 +853,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "bacterium alcyoneum",
@@ -892,7 +892,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "aleoida spica",
@@ -902,7 +902,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "cactoida lapis",
@@ -912,7 +912,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "cactoida peperatis",
@@ -922,7 +922,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "concha aureolas",
@@ -932,7 +932,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "frutexa metallicum",
@@ -942,7 +942,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "fungoida setisis",
@@ -952,7 +952,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "osseus spiralis",
@@ -962,7 +962,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tubus sororibus",
@@ -972,7 +972,7 @@
         "planet": [
             "high metal content"
         ],
-        "low_g": true
+        "g_max": 0.15
     },
     {
         "name": "bacterium alcyoneum",
@@ -1002,7 +1002,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "frutexa acus",
@@ -1013,7 +1013,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "frutexa fera",
@@ -1024,7 +1024,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock propagito",
@@ -1035,7 +1035,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock pennatis",
@@ -1046,7 +1046,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true
+        "g_max": 0.27
     },
     {
         "name": "tussock pennata",
@@ -1057,7 +1057,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 145
     },
     {
@@ -1069,7 +1069,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 155
     },
     {
@@ -1081,7 +1081,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 160
     },
     {
@@ -1093,7 +1093,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 170
     },
     {
@@ -1105,7 +1105,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 175
     },
     {
@@ -1117,7 +1117,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 175
     },
     {
@@ -1129,7 +1129,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1141,7 +1141,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1153,7 +1153,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1165,7 +1165,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1177,7 +1177,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1189,7 +1189,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1201,7 +1201,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1213,7 +1213,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1225,7 +1225,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 180
     },
     {
@@ -1237,7 +1237,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.15,
         "temp_min": 160
     },
     {
@@ -1249,7 +1249,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.15,
         "temp_min": 160
     },
     {
@@ -1261,7 +1261,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.15,
         "temp_min": 160
     },
     {
@@ -1273,7 +1273,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 190
     },
     {
@@ -1285,7 +1285,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 190
     },
     {
@@ -1297,7 +1297,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 190
     },
     {
@@ -1309,7 +1309,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 190
     },
     {
@@ -1321,7 +1321,7 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
+        "g_max": 0.27,
         "temp_min": 190
     },
     {
@@ -1333,8 +1333,9 @@
         "planet": [
             "rocky"
         ],
-        "low_g": true,
-        "temp_min": 190
+        "g_max": 0.27,
+        "temp_min": 190,
+        "dist_min": 2500
     },
     {
         "name": "bacterium aurasus",

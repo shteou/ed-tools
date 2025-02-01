@@ -104,8 +104,8 @@
                     // Filter out based on planetary type
                     (x) => x.planet === undefined || x.planet.includes(filters.planet)
                 ).filter(
-                    // Filter minimum temperature
-                    (x) => x.temp_min === undefined || x.temp_min <= filters.temp_min
+                    // Filter temp range
+                    (x) => x.temp_min === undefined || (x.temp_min <= filters.temp_max || x.temp_max > filters.temp_min)
                 ).filter(
                     // Filter minimum distance
                     (x) => x.dist_min === undefined || x.dist_min <= filters.distance
@@ -172,6 +172,14 @@
                     label: "Minimum temperature (K)",
                     onkeyup: (e) => {
                         App.data.temp_min = ~~e.target.value;
+                        m.redraw()
+                    }
+                }),
+                m(InputField, {
+                    id: "max-temp",
+                    label: "Maximum temperature (K)",
+                    onkeyup: (e) => {
+                        App.data.temp_max = ~~e.target.value;
                         m.redraw()
                     }
                 }),

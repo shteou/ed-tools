@@ -6,6 +6,12 @@
         .component {
             margin: 10px
         }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
     </style>
     <script src="https://unpkg.com/mithril/mithril.js"></script>
     <title>The Germ Finder General</title>
@@ -122,7 +128,18 @@
             data: {},
             view: () => m(
                 "div.component", [
-                m("h1", "The Germ Finder General"),
+                m("div.flex-container", [
+                    m("h1.left", "The Germ Finder General"),
+                    m("a.right", {
+                        href: "https://github.com/shteou/ed-tools/", target: "_blank"
+                    }, [
+                        m("img", {
+                            src: "img/github.png",
+                            alt: "GitHub",
+                            width: 50
+                        })
+                    ])
+                ]),
                 m("p", "An Elite Dangerous exo-biology tool"),
                 m("p", "Filter available species by the conditions of a specific system and planetary body"),
                 m("h2", "Star System"),

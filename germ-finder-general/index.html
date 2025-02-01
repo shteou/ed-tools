@@ -105,7 +105,13 @@
                     (x) => x.planet === undefined || x.planet.includes(filters.planet)
                 ).filter(
                     // Filter temp range
-                    (x) => (x.temp_min === undefined && x.temp_max == undefined) || x.temp_min <= filters.temp_max || x.temp_max > filters.temp_min
+                    // filters.temp_max > x.temp_min || filters.temp_min < x.temp_max
+                    // x.temp_min <= filters.temp_max && x.temp_max > filters.temp_min
+                    (x) => ((x.temp_min === undefined && x.temp_max == undefined)
+                        || (x.temp_min === undefined && filters.temp_min < x.temp_max)
+                        || (x.temp_max === undefined && filters.temp_max > x.temp_min)
+                        || (x.temp_min <= filters.temp_max && filters.temp_min <= x.temp_max)
+                    )
                 ).filter(
                     // Filter minimum distance
                     (x) => x.dist_min === undefined || x.dist_min <= filters.distance

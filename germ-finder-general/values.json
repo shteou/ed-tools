@@ -1,98 +1,386 @@
 {
-    "aleoida arcus": 7252500,
-    "aleoida coronamus": 6284600,
-    "aleoida gravis": 12934900,
-    "aleoida laminiae": 3385200,
-    "aleoida spica": 3385200,
-    "amphora plant": 1628800,
-    "anemone": 1499900,
-    "bacterium acies": 1000000,
-    "bacterium alcyoneum": 1658500,
-    "bacterium aurasus": 1000000,
-    "bacterium bullaris": 1152500,
-    "bacterium cerbrus": 1689800,
-    "bacterium informem": 8418000,
-    "bacterium nebulus": 5289900,
-    "bacterium omentum": 4638900,
-    "bacterium scopulum": 4934500,
-    "bacterium tela": 1949000,
-    "bacterium verrata": 3897000,
-    "bacterium vesicula": 1000000,
-    "bacterium volu": 7774700,
-    "bark mounds": 1471900,
-    "brain tree": 1593700,
-    "cactoida cortexum": 3667600,
-    "cactoida lapis": 2483600,
-    "cactoida peperatis": 2483600,
-    "cactoida pullulanta": 3667600,
-    "cactoida vermis": 16202800,
-    "clypeus lacrimam": 8418000,
-    "clypeus margaritus": 11873200,
-    "clypeus speculumi": 16202800,
-    "concha aureolas": 7774700,
-    "concha biconcavis": 19010800,
-    "concha labiata": 2352400,
-    "concha renibus": 4572400,
-    "crystalline shards": 1628800,
-    "electricae pluma": 6284600,
-    "electricae radialem": 6284600,
-    "fonticulua campestris": 1000000,
-    "fonticulua digitos": 1804100,
-    "fonticulua fluctus": 20000000,
-    "fonticulua lapida": 3111000,
-    "fonticulua segmentatus": 19010800,
-    "fonticulua upupam": 5727600,
-    "frutexa acus": 7774700,
-    "frutexa collum": 1639800,
-    "frutexa fera": 1632500,
-    "frutexa flabellum": 1808900,
-    "frutexa flammasis": 10326000,
-    "frutexa metallicum": 1632500,
-    "frutexa sponsae": 5988000,
-    "fumerola aquatis": 6284600,
-    "fumerola carbosis": 6284600,
-    "fumerola extremus": 16202800,
-    "fumerola nitris": 7500900,
-    "fungoida bullarum": 3703200,
-    "fungoida gelata": 3330300,
-    "fungoida setisis": 1670100,
-    "fungoida stabitis": 2680300,
-    "osseus cornibus": 1483000,
-    "osseus discus": 12934900,
-    "osseus fractus": 4027800,
-    "osseus pellebantus": 9739000,
-    "osseus pumice": 3156300,
-    "osseus spiralis": 2404700,
-    "recepta conditivus": 14313700,
-    "recepta deltahedronix": 16202800,
-    "recepta umbrux": 12934900,
-    "sinuous tubers": 1514500,
-    "stratum araneamus": 2448900,
-    "stratum cucumisis": 16202800,
-    "stratum excutitus": 2448900,
-    "stratum frigus": 2637500,
-    "stratum laminamus": 2788300,
-    "stratum limaxus": 1362000,
-    "stratum paleas": 1362000,
-    "stratum tectonicas": 19010800,
-    "tubus cavas": 11873200,
-    "tubus compagibus": 7774700,
-    "tubus conifer": 2415500,
-    "tubus rosarium": 2637500,
-    "tubus sororibus": 5727600,
-    "tussock albata": 3252500,
-    "tussock capillum": 7025800,
-    "tussock caputus": 3472400,
-    "tussock catena": 1766600,
-    "tussock cultro": 1766600,
-    "tussock divisa": 1766600,
-    "tussock ignis": 1849000,
-    "tussock pennata": 5853800,
-    "tussock pennatis": 1000000,
-    "tussock propagito": 1000000,
-    "tussock serrati": 4447100,
-    "tussock stigmasis": 19010800,
-    "tussock triticum": 7774700,
-    "tussock ventusa": 3227700,
-    "tussock virgam": 14313700
+    "aleoida arcus": {
+        "value": 7252500,
+        "distance": 150
+    },
+    "aleoida coronamus": {
+        "value": 6284600,
+        "distance": 150
+    },
+    "aleoida gravis": {
+        "value": 12934900,
+        "distance": 150
+    },
+    "aleoida laminiae": {
+        "value": 3385200,
+        "distance": 150
+    },
+    "aleoida spica": {
+        "value": 3385200,
+        "distance": 150
+    },
+    "amphora plant": {
+        "value": 1628800,
+        "distance": 100
+    },
+    "anemone": {
+        "value": 1499900,
+        "distance": 100
+    },
+    "bacterium acies": {
+        "value": 1000000,
+        "distance": 150
+    },
+    "bacterium alcyoneum": {
+        "value": 1658500,
+        "distance": 150
+    },
+    "bacterium aurasus": {
+        "value": 1000000,
+        "distance": 150
+    },
+    "bacterium bullaris": {
+        "value": 1152500,
+        "distance": 150
+    },
+    "bacterium cerbrus": {
+        "value": 1689800,
+        "distance": 150
+    },
+    "bacterium informem": {
+        "value": 8418000,
+        "distance": 150
+    },
+    "bacterium nebulus": {
+        "value": 5289900,
+        "distance": 150
+    },
+    "bacterium omentum": {
+        "value": 4638900,
+        "distance": 150
+    },
+    "bacterium scopulum": {
+        "value": 4934500,
+        "distance": 150
+    },
+    "bacterium tela": {
+        "value": 1949000,
+        "distance": 150
+    },
+    "bacterium verrata": {
+        "value": 3897000,
+        "distance": 150
+    },
+    "bacterium vesicula": {
+        "value": 1000000,
+        "distance": 150
+    },
+    "bacterium volu": {
+        "value": 7774700,
+        "distance": 150
+    },
+    "bark mounds": {
+        "value": 1471900,
+        "distance": 100
+    },
+    "brain tree": {
+        "value": 1593700,
+        "distance": 100
+    },
+    "cactoida cortexum": {
+        "value": 3667600,
+        "distance": 300
+    },
+    "cactoida lapis": {
+        "value": 2483600,
+        "distance": 300
+    },
+    "cactoida peperatis": {
+        "value": 2483600,
+        "distance": 300
+    },
+    "cactoida pullulanta": {
+        "value": 3667600,
+        "distance": 300
+    },
+    "cactoida vermis": {
+        "value": 16202800,
+        "distance": 300
+    },
+    "clypeus lacrimam": {
+        "value": 8418000,
+        "distance": 150
+    },
+    "clypeus margaritus": {
+        "value": 11873200,
+        "distance": 150
+    },
+    "clypeus speculumi": {
+        "value": 16202800,
+        "distance": 150
+    },
+    "concha aureolas": {
+        "value": 7774700,
+        "distance": 150
+    },
+    "concha biconcavis": {
+        "value": 19010800,
+        "distance": 150
+    },
+    "concha labiata": {
+        "value": 2352400,
+        "distance": 150
+    },
+    "concha renibus": {
+        "value": 4572400,
+        "distance": 150
+    },
+    "crystalline shards": {
+        "value": 1628800,
+        "distance": 100
+    },
+    "electricae pluma": {
+        "value": 6284600,
+        "distance": 1000
+    },
+    "electricae radialem": {
+        "value": 6284600,
+        "distance": 1000
+    },
+    "fonticulua campestris": {
+        "value": 1000000,
+        "distance": 500
+    },
+    "fonticulua digitos": {
+        "value": 1804100,
+        "distance": 500
+    },
+    "fonticulua fluctus": {
+        "value": 20000000,
+        "distance": 500
+    },
+    "fonticulua lapida": {
+        "value": 3111000,
+        "distance": 500
+    },
+    "fonticulua segmentatus": {
+        "value": 19010800,
+        "distance": 500
+    },
+    "fonticulua upupam": {
+        "value": 5727600,
+        "distance": 500
+    },
+    "frutexa acus": {
+        "value": 7774700,
+        "distance": 150
+    },
+    "frutexa collum": {
+        "value": 1639800,
+        "distance": 150
+    },
+    "frutexa fera": {
+        "value": 1632500,
+        "distance": 150
+    },
+    "frutexa flabellum": {
+        "value": 1808900,
+        "distance": 150
+    },
+    "frutexa flammasis": {
+        "value": 10326000,
+        "distance": 150
+    },
+    "frutexa metallicum": {
+        "value": 1632500,
+        "distance": 150
+    },
+    "frutexa sponsae": {
+        "value": 5988000,
+        "distance": 150
+    },
+    "fumerola aquatis": {
+        "value": 6284600,
+        "distance": 100
+    },
+    "fumerola carbosis": {
+        "value": 6284600,
+        "distance": 100
+    },
+    "fumerola extremus": {
+        "value": 16202800,
+        "distance": 100
+    },
+    "fumerola nitris": {
+        "value": 7500900,
+        "distance": 100
+    },
+    "fungoida bullarum": {
+        "value": 3703200,
+        "distance": 300
+    },
+    "fungoida gelata": {
+        "value": 3330300,
+        "distance": 300
+    },
+    "fungoida setisis": {
+        "value": 1670100,
+        "distance": 300
+    },
+    "fungoida stabitis": {
+        "value": 2680300,
+        "distance": 300
+    },
+    "osseus cornibus": {
+        "value": 1483000,
+        "distance": 800
+    },
+    "osseus discus": {
+        "value": 12934900,
+        "distance": 800
+    },
+    "osseus fractus": {
+        "value": 4027800,
+        "distance": 800
+    },
+    "osseus pellebantus": {
+        "value": 9739000,
+        "distance": 800
+    },
+    "osseus pumice": {
+        "value": 3156300,
+        "distance": 800
+    },
+    "osseus spiralis": {
+        "value": 2404700,
+        "distance": 800
+    },
+    "recepta conditivus": {
+        "value": 14313700,
+        "distance": 150
+    },
+    "recepta deltahedronix": {
+        "value": 16202800,
+        "distance": 150
+    },
+    "recepta umbrux": {
+        "value": 12934900,
+        "distance": 150
+    },
+    "sinuous tubers": {
+        "value": 1514500,
+        "distance": 150
+    },
+    "stratum araneamus": {
+        "value": 2448900,
+        "distance": 500
+    },
+    "stratum cucumisis": {
+        "value": 16202800,
+        "distance": 500
+    },
+    "stratum excutitus": {
+        "value": 2448900,
+        "distance": 500
+    },
+    "stratum frigus": {
+        "value": 2637500,
+        "distance": 500
+    },
+    "stratum laminamus": {
+        "value": 2788300,
+        "distance": 500
+    },
+    "stratum limaxus": {
+        "value": 1362000,
+        "distance": 500
+    },
+    "stratum paleas": {
+        "value": 1362000,
+        "distance": 500
+    },
+    "stratum tectonicas": {
+        "value": 19010800,
+        "distance": 500
+    },
+    "tubus cavas": {
+        "value": 11873200,
+        "distance": 800
+    },
+    "tubus compagibus": {
+        "value": 7774700,
+        "distance": 800
+    },
+    "tubus conifer": {
+        "value": 2415500,
+        "distance": 800
+    },
+    "tubus rosarium": {
+        "value": 2637500,
+        "distance": 800
+    },
+    "tubus sororibus": {
+        "value": 5727600,
+        "distance": 800
+    },
+    "tussock albata": {
+        "value": 3252500,
+        "distance": 200
+    },
+    "tussock capillum": {
+        "value": 7025800,
+        "distance": 200
+    },
+    "tussock caputus": {
+        "value": 3472400,
+        "distance": 200
+    },
+    "tussock catena": {
+        "value": 1766600,
+        "distance": 200
+    },
+    "tussock cultro": {
+        "value": 1766600,
+        "distance": 200
+    },
+    "tussock divisa": {
+        "value": 1766600,
+        "distance": 200
+    },
+    "tussock ignis": {
+        "value": 1849000,
+        "distance": 200
+    },
+    "tussock pennata": {
+        "value": 5853800,
+        "distance": 200
+    },
+    "tussock pennatis": {
+        "value": 1000000,
+        "distance": 200
+    },
+    "tussock propagito": {
+        "value": 1000000,
+        "distance": 200
+    },
+    "tussock serrati": {
+        "value": 4447100,
+        "distance": 200
+    },
+    "tussock stigmasis": {
+        "value": 19010800,
+        "distance": 200
+    },
+    "tussock triticum": {
+        "value": 7774700,
+        "distance": 200
+    },
+    "tussock ventusa": {
+        "value": 3227700,
+        "distance": 200
+    },
+    "tussock virgam": {
+        "value": 14313700,
+        "distance": 200
+    }
 }

@@ -95,8 +95,8 @@
                     // Filter out species by planetary atmosphere type
                     (x) => x.atmosphere === undefined || x.atmosphere.includes(filters.atmosphere)
                 ).filter(
-                    // Filter out low gravity (<0.27G) species
-                    (x) => x.low_g === undefined || (x.low_g === true && filters.low_g)
+                    // Filter out higher gravity species
+                    (x) => x.g_max === undefined || (x.g_max >= filters.gravity)
                 ).filter(
                     // Filter out if system is local to a nebula
                     (x) => x.nebula === undefined || (x.nebula === true && filters.nebula)
@@ -204,12 +204,11 @@
                     }
                 }),
                 m("h3", "Gravity"),
-                m(Checkbox, {
-                    id: "gravity",
-                    label: "<0.27G?",
-                    oninit: () => App.data.low_g = false,
-                    onchange: (e) => {
-                        App.data.low_g = e.target.checked;
+                m(InputField, {
+                    id: "max-grav",
+                    label: "Gravity (g)",
+                    onkeyup: (e) => {
+                        App.data.gravity = parseFloat(e.target.value);
                         m.redraw()
                     }
                 }),

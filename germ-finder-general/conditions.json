@@ -2,340 +2,1404 @@
     {
         "name": "fumerola aquatis",
         "low_g": true,
-        "volcanism": ["water"]
-    }, {
+        "volcanism": [
+            "water"
+        ]
+    },
+    {
         "name": "fumerola carbosis",
         "low_g": true,
-        "volcanism": ["carbon", "methane"]
-    }, {
+        "volcanism": [
+            "carbon",
+            "methane"
+        ]
+    },
+    {
         "name": "fumerola extremus",
         "low_g": true,
-        "volcanism": ["silicate", "iron", "rocky"]
-    }, {
+        "volcanism": [
+            "silicate",
+            "iron",
+            "rocky"
+        ]
+    },
+    {
         "name": "fumerola nitris",
         "low_g": true,
-        "volcanism": ["nitrogen", "ammonia"]
-    }, {
+        "volcanism": [
+            "nitrogen",
+            "ammonia"
+        ]
+    },
+    {
         "name": "bacterium tela",
-        "volcanism": ["helium", "iron", "silicate", "ammonia"]
-    }, {
+        "volcanism": [
+            "helium",
+            "iron",
+            "silicate",
+            "ammonia"
+        ]
+    },
+    {
         "name": "electricae pluma",
-        "atmosphere": ["helium"],
+        "atmosphere": [
+            "helium"
+        ],
         "low_g": true,
-        "star_type": ["A"],
-        "luminosity": ["V+"]
-    }, {
+        "star_type": [
+            "A"
+        ],
+        "luminosity": [
+            "V+"
+        ]
+    },
+    {
         "name": "electricae radialem",
-        "atmosphere": ["helium"],
+        "atmosphere": [
+            "helium"
+        ],
         "low_g": true,
         "nebula": true
-    }, {
+    },
+    {
         "name": "bacterium nebulus",
-        "atmosphere": ["helium"]
-    }, {
+        "atmosphere": [
+            "helium"
+        ]
+    },
+    {
         "name": "electricae pluma",
-        "atmosphere": ["neon", "neon-rich"],
+        "atmosphere": [
+            "neon",
+            "neon-rich"
+        ],
         "low_g": true,
-        "star_type": ["A"],
-        "luminosity": ["V+"]
-    }, {
+        "star_type": [
+            "A"
+        ],
+        "luminosity": [
+            "V+"
+        ]
+    },
+    {
         "name": "electricae radialem",
-        "atmosphere": ["neon", "neon-rich"],
+        "atmosphere": [
+            "neon",
+            "neon-rich"
+        ],
         "low_g": true,
         "nebula": true
-    }, {
-        "name": "fonticulua segmentus",
-        "atmosphere": ["neon", "neon-rich"],
+    },
+    {
+        "name": "fonticulua segmentatus",
+        "atmosphere": [
+            "neon",
+            "neon-rich"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium acies",
-        "atmosphere": ["neon", "neon-rich"]
-    }, {
+        "atmosphere": [
+            "neon",
+            "neon-rich"
+        ]
+    },
+    {
         "name": "bacterium verrata",
-        "atmosphere": ["neon", "neon-rich"],
-        "volcanism": ["water"]
-    }, {
+        "atmosphere": [
+            "neon",
+            "neon-rich"
+        ],
+        "volcanism": [
+            "water"
+        ]
+    },
+    {
         "name": "bacterium omentum",
-        "atmosphere": ["neon", "neon-rich"],
-        "volcanism": ["nitrogen", "ammonium"]
-    }, {
+        "atmosphere": [
+            "neon",
+            "neon-rich"
+        ],
+        "volcanism": [
+            "nitrogen",
+            "ammonium"
+        ]
+    },
+    {
         "name": "bacterium scopulum",
-        "atmosphere": ["neon", "neon-rich"],
-        "volcanism": ["carbon", "methane"]
-    }, {
+        "atmosphere": [
+            "neon",
+            "neon-rich"
+        ],
+        "volcanism": [
+            "carbon",
+            "methane"
+        ]
+    },
+    {
         "name": "electricae pluma",
-        "atmosphere": ["argon", "argon-rich"],
+        "atmosphere": [
+            "argon",
+            "argon-rich"
+        ],
         "low_g": true,
-        "star_type": ["A"],
-        "luminosity": ["V+"]
-    }, {
+        "star_type": [
+            "A"
+        ],
+        "luminosity": [
+            "V+"
+        ]
+    },
+    {
         "name": "electricae radialem",
-        "atmosphere": ["argon", "argon-rich"],
+        "atmosphere": [
+            "argon",
+            "argon-rich"
+        ],
         "low_g": true,
         "nebula": true
-    }, {
+    },
+    {
         "name": "fonticulua campestris",
-        "atmosphere": ["argon"],
-        "planet": ["icy", "rocky-ice"],
+        "atmosphere": [
+            "argon"
+        ],
+        "planet": [
+            "icy",
+            "rocky-ice"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fonticulua upupam",
-        "atmosphere": ["argon-rich"],
-        "planet": ["icy", "rocky-ice"],
+        "atmosphere": [
+            "argon-rich"
+        ],
+        "planet": [
+            "icy",
+            "rocky-ice"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fungoida bullarum",
-        "atmosphere": ["argon", "argon-rich"],
+        "atmosphere": [
+            "argon",
+            "argon-rich"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "osseus pumice",
-        "atmosphere": ["argon", "argon-rich"],
+        "atmosphere": [
+            "argon",
+            "argon-rich"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "tussock capillum",
-        "atmosphere": ["argon", "argon-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "argon",
+            "argon-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium vesicula",
-        "atmosphere": ["argon", "argon-rich"]
-    }, {
+        "atmosphere": [
+            "argon",
+            "argon-rich"
+        ]
+    },
+    {
         "name": "fonticulua digitos",
-        "atmosphere": ["methane", "methane-rich"],
-        "planet": ["icy", "rocky ice"],
+        "atmosphere": [
+            "methane",
+            "methane-rich"
+        ],
+        "planet": [
+            "icy",
+            "rocky ice"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fungoida setisis",
-        "atmosphere": ["methane", "methane-rich"],
+        "atmosphere": [
+            "methane",
+            "methane-rich"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "osseus pumice",
-        "atmosphere": ["methane", "methane-rich"],
+        "atmosphere": [
+            "methane",
+            "methane-rich"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "tussock capillum",
-        "atmosphere": ["methane", "methane-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "methane",
+            "methane-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium bullaris",
-        "atmosphere": ["methane", "methane-rich"]
-    }, {
+        "atmosphere": [
+            "methane",
+            "methane-rich"
+        ]
+    },
+    {
         "name": "concha biconcavis",
-        "atmosphere": ["nitrogen"],
+        "atmosphere": [
+            "nitrogen"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fonticulua lapida",
-        "atmosphere": ["nitrogen"],
-        "planet": ["icy", "rocky ice"],
+        "atmosphere": [
+            "nitrogen"
+        ],
+        "planet": [
+            "icy",
+            "rocky ice"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium informem",
-        "atmosphere": ["nitrogen"]
-    }, {
+        "atmosphere": [
+            "nitrogen"
+        ]
+    },
+    {
         "name": "fonticulua fluctus",
-        "atmosphere": ["oxygen"],
-        "planet": ["icy", "rocky ice"],
+        "atmosphere": [
+            "oxygen"
+        ],
+        "planet": [
+            "icy",
+            "rocky ice"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium volu",
-        "atmosphere": ["oxygen"]
-    }, {
+        "atmosphere": [
+            "oxygen"
+        ]
+    },
+    {
         "name": "stratum tectonicas",
-        "atmosphere": ["oxygen"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "oxygen"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "temp_min": 165
-    }, {
+    },
+    {
         "name": "recepta umbrux",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["icy", "rocky ice"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "icy",
+            "rocky ice"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "recepta conditivus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["icy", "rocky ice"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "icy",
+            "rocky ice"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium cerbrus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["icy", "rocky ice"]
-    }, {
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "icy",
+            "rocky ice"
+        ]
+    },
+    {
         "name": "frutexa collum",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "recepta deltahedronix",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "recepta umbrux",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "tussock stigmasis",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium cerbrus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"]
-    }, {
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ]
+    },
+    {
         "name": "stratum araneamus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "temp_min": 165
-    }, {
+    },
+    {
         "name": "stratum excutitus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "temp_min": 165
-    }, {
+    },
+    {
         "name": "stratum limaxus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "temp_min": 165
-    }, {
+    },
+    {
         "name": "stratum frigus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "temp_min": 190
-    }, {
+    },
+    {
         "name": "stratum cucumisis",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "temp_min": 190
-    }, {
+    },
+    {
         "name": "recepta deltahedronix",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "recepta umbrux",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium cerbrus",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["high metal content"]
-    }, {
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "high metal content"
+        ]
+    },
+    {
         "name": "stratum tectonicas",
-        "atmosphere": ["sulphur dioxide"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "sulphur dioxide"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "temp_min": 165
-    }, {
+    },
+    {
         "name": "cactoida vermis",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "clypeus lacrimam",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "clypeus margaritus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "clypeus speculumi",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true,
         "dist_min": 2500
-    }, {
+    },
+    {
         "name": "concha renibus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "frutexa sponsae",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fungoida gelata",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fungoida stabitis",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "osseus discus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "tussock virgam",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium cerbrus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"]
-    }, {
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ]
+    },
+    {
         "name": "stratum paleas",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["rocky"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
         "temp_min": 165
-    }, {
+    },
+    {
         "name": "cactoida vermis",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "clypeus lacrimam",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "clypeus margaritus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "clypeus speculumi",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true,
         "dist_min": 2500
-    }, {
+    },
+    {
         "name": "concha renibus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fungoida gelata",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "fungoida stabitis",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "osseus discus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "low_g": true
-    }, {
+    },
+    {
         "name": "bacterium cerbrus",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"]
-    }, {
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ]
+    },
+    {
         "name": "stratum tectonicas",
-        "atmosphere": ["water", "water-rich"],
-        "planet": ["high metal content"],
+        "atmosphere": [
+            "water",
+            "water-rich"
+        ],
+        "planet": [
+            "high metal content"
+        ],
         "temp_min": 165
+    },
+    {
+        "name": "aleoida laminiae",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "aleoida spica",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "cactoida lapis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "cactoida peperatis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "concha aureolas",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "frutexa flabellum",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "frutexa flammasis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "fungoida setisis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tubus rosarium",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "osseus spiralis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tussock catena",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tussock cultro",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tussock divisa",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "bacterium alcyoneum",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ]
+    },
+    {
+        "name": "stratum paleas",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 165
+    },
+    {
+        "name": "stratum laminamus",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 165
+    },
+    {
+        "name": "aleoida laminiae",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "aleoida spica",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "cactoida lapis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "cactoida peperatis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "concha aureolas",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "frutexa metallicum",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "fungoida setisis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "osseus spiralis",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tubus sororibus",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "bacterium alcyoneum",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ]
+    },
+    {
+        "name": "stratum tectonicas",
+        "atmosphere": [
+            "ammonia"
+        ],
+        "planet": [
+            "high metal content"
+        ],
+        "temp_min": 165
+    },
+    {
+        "name": "concha labiata",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "frutexa acus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "frutexa fera",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tussock propagito",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tussock pennatis",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true
+    },
+    {
+        "name": "tussock pennata",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 145
+    },
+    {
+        "name": "tussock ventusa",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 155
+    },
+    {
+        "name": "tussock ignis",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 160
+    },
+    {
+        "name": "tussock serrati",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 170
+    },
+    {
+        "name": "aleoida arcus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 175
+    },
+    {
+        "name": "tussock albata",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 175
+    },
+    {
+        "name": "aleoida coronamus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "cactoida cortexum",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "cactoida pullulanta",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "concha renibus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "fungoida gelata",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "fungoida stabitis",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "osseus cornibus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "osseus fractus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "tussock caputus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 180
+    },
+    {
+        "name": "tubus cavas",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 160
+    },
+    {
+        "name": "tubus compagibus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 160
+    },
+    {
+        "name": "tubus conifer",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 160
+    },
+    {
+        "name": "aleoida gravis",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 190
+    },
+    {
+        "name": "osseus pellebantus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 190
+    },
+    {
+        "name": "tussock triticum",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 190
+    },
+    {
+        "name": "clypeus lacrimam",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 190
+    },
+    {
+        "name": "clypeus margaritus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 190
+    },
+    {
+        "name": "clypeus speculumi",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "low_g": true,
+        "temp_min": 190
+    },
+    {
+        "name": "bacterium aurasus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 165
+    },
+    {
+        "name": "stratum paleas",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 165
+    },
+    {
+        "name": "stratum excutitus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 165
+    },
+    {
+        "name": "stratum limaxus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 165
+    },
+    {
+        "name": "stratum frigus",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 190
+    },
+    {
+        "name": "stratum cucumisis",
+        "atmosphere": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planet": [
+            "rocky"
+        ],
+        "temp_min": 190
     }
 ]

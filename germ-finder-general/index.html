@@ -230,10 +230,10 @@
             )
         }
 
-        fetch("conditions.json").then(
+        fetch("https://raw.githubusercontent.com/shteou/ed-tools/refs/heads/master/germ-finder-general/conditions.json").then(
             response => response.json()
         ).then(conditions => {
-            fetch("values.json").then(
+            fetch("https://raw.githubusercontent.com/shteou/ed-tools/refs/heads/master/germ-finder-general/values.json").then(
                 response => response.json()
             ).then(values => {
                 App.conditions = conditions;

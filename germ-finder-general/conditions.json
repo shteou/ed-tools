@@ -1426,5 +1426,242 @@
             "rocky"
         ],
         "temp_min": 190
+    },
+    {
+        "name": "aleoida arcus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 175,
+        "temp_max": 180
+    },
+    {
+        "name": "aleoida coronamus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 190
+    },
+    {
+        "name": "aleoida gravis",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 190,
+        "temp_max": 195
+    },
+    {
+        "name": "cactoida cortexum",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 195
+    },
+    {
+        "name": "cactoida pullulanta",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 195
+    },
+    {
+        "name": "concha labiata",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_max": 190
+    },
+    {
+        "name": "concha renibus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 195
+    },
+    {
+        "name": "frutexa metallicum",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27
+    },
+    {
+        "name": "fungoida gelata",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 195
+    },
+    {
+        "name": "fungoida stabitis",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 195
+    },
+    {
+        "name": "osseus cornibus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 195
+    },
+    {
+        "name": "osseus fractus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 180,
+        "temp_max": 190
+    },
+    {
+        "name": "osseus pellebantus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 190,
+        "temp_max": 195
+    },
+    {
+        "name": "tubus sororibus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.15,
+        "temp_min": 160,
+        "temp_max": 190
+    },
+    {
+        "name": "clypeus lacrimam",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 190
+    },
+    {
+        "name": "clypeus margaritus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 190
+    },
+    {
+        "name": "clypeus speculumi",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "max_g": 0.27,
+        "temp_min": 190,
+        "dist_min": 2500
+    },
+    {
+        "name": "bacterium aurasus",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ]
+    },
+    {
+        "name": "stratum tectonicas",
+        "atmospheres": [
+            "carbon dioxide",
+            "carbon dioxide-rich"
+        ],
+        "planets": [
+            "high metal content"
+        ],
+        "temp_min": 165
     }
 ]

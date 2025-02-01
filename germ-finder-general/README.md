@@ -3,6 +3,8 @@
 The Germ Finder General is a simple tool to discover which exobiology
 species may be present in a given system and body.
 
+You can find the tool here: [https://shteou.github.io/ed-tools/germ-finder-general/](https://shteou.github.io/ed-tools/germ-finder-general/)
+
 To use the tool, simply open the index.html file in a browser and input
 the details of the system and body.  
 All possible species for the body will be listed along with:

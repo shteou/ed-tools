@@ -1436,7 +1436,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 175,
         "temp_max": 180
     },
@@ -1449,7 +1449,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 190
     },
@@ -1462,7 +1462,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 190,
         "temp_max": 195
     },
@@ -1475,7 +1475,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 195
     },
@@ -1488,7 +1488,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 195
     },
@@ -1501,7 +1501,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_max": 190
     },
     {
@@ -1513,7 +1513,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 195
     },
@@ -1526,7 +1526,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27
+        "g_max": 0.27
     },
     {
         "name": "fungoida gelata",
@@ -1537,7 +1537,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 195
     },
@@ -1550,7 +1550,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 195
     },
@@ -1563,7 +1563,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 195
     },
@@ -1576,7 +1576,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 180,
         "temp_max": 190
     },
@@ -1589,7 +1589,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 190,
         "temp_max": 195
     },
@@ -1602,7 +1602,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.15,
+        "g_max": 0.15,
         "temp_min": 160,
         "temp_max": 190
     },
@@ -1615,7 +1615,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 190
     },
     {
@@ -1627,7 +1627,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 190
     },
     {
@@ -1639,7 +1639,7 @@
         "planet": [
             "high metal content"
         ],
-        "max_g": 0.27,
+        "g_max": 0.27,
         "temp_min": 190,
         "dist_min": 2500
     },

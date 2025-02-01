@@ -1,11 +1,25 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
     <style>
         .component {
             margin: 10px
         }
+
+        .container {
+            width: 100%;
+            max-width: 50vw; /* 50% of viewport width */
+            margin: 0 auto; /* Centers the container */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+
         .flex-container {
             display: flex;
             justify-content: space-between;
@@ -26,7 +40,9 @@
                 m("div.component", [
                     m("input.cs-input", {
                         id: attrs.id,
-                        type: "text",
+                        type: attrs.type || "text",
+                        step: attrs.step,
+                        inputmode: attrs.inputmode,
                         onchange: attrs.onchange || (() => { }),
                         onkeyup: attrs.onkeyup || (() => { })
                     }),
@@ -127,129 +143,140 @@
             },
             data: {},
             view: () => m(
-                "div.component", [
-                m("div.flex-container", [
-                    m("h1.left", "The Germ Finder General"),
-                    m("a.right", {
-                        href: "https://github.com/shteou/ed-tools/", target: "_blank"
-                    }, [
-                        m("img", {
-                            src: "img/github.png",
-                            alt: "GitHub",
-                            width: 50
+                "div.container", [
+                    m("div.component", [
+                        m("div.flex-container", [
+                            m("h1.left", "The Germ Finder General"),
+                            m("a.right", {
+                                href: "https://github.com/shteou/ed-tools/", target: "_blank"
+                            }, [
+                                m("img", {
+                                    src: "img/github.png",
+                                    alt: "GitHub",
+                                    width: 50
+                                })
+                            ])
+                        ]),
+                        m("p", "An Elite Dangerous exo-biology tool"),
+                        m("p", "Filter available species by the conditions of a specific system and planetary body"),
+                        m("h2", "Star System"),
+                        m(Select, {
+                            options: [
+                                { value: "other", label: "Other" },
+                                { value: "A", label: "A" }
+                            ],
+                            oninit: () => App.data.star_type = "other",
+                            onchange: (e) => {
+                                App.data.star_type = e.target.value;
+                                m.redraw()
+                            }
+                        }),
+                        m(Checkbox, {
+                            id: "nebula",
+                            label: "Local to a nebula?",
+                            oninit: () => App.data.nebula = false,
+                            onchange: (e) => {
+                                App.data.nebula = e.target.checked;
+                                m.redraw()
+                            }
+                        }),
+                        m("h2", "System Body"),
+                        m("h3", "Atmosphere"),
+                        m(Select, {
+                            options: [... new Set(App.conditions.map(
+                                (x) => x.atmosphere
+                            ).flat())].map((x) => {
+                                return { value: x, label: x }
+                            }),
+                            oninit: () => App.data.atmosphere = "",
+                            onchange: (e) => {
+                                App.data.atmosphere = e.target.value;
+                                m.redraw()
+                            }
+                        }),
+                        m("h3", "Body Type"),
+                        m(Select, {
+                            options: [... new Set(App.conditions.map(
+                                (x) => x.planet
+                            ).flat())].map((x) => {
+                                return { value: x, label: x }
+                            }),
+                            onchange: (e) => {
+                                App.data.planet = e.target.value;
+                                m.redraw()
+                            }
+                        }),
+                        m("h3", "Temperature range"),
+                        m(InputField, {
+                            id: "min-temp",
+                            label: "Minimum temperature (K)",
+                            type: "number",
+                            inputmode: "numeric",
+                            onkeyup: (e) => {
+                                App.data.temp_min = ~~e.target.value;
+                                m.redraw()
+                            }
+                        }),
+                        m(InputField, {
+                            id: "max-temp",
+                            label: "Maximum temperature (K)",
+                            type: "number",
+                            inputmode: "numeric",
+                            onkeyup: (e) => {
+                                App.data.temp_max = ~~e.target.value;
+                                m.redraw()
+                            }
+                        }),
+                        m("h3", "Body Distance"),
+                        m(InputField, {
+                            id: "min-dist",
+                            label: "Distance (LS)",
+                            type: "number",
+                            inputmode: "numeric",
+                            onkeyup: (e) => {
+                                App.data.distance = ~~e.target.value;
+                                m.redraw()
+                            }
+                        }),
+                        m("h3", "Volcanism Type"),
+                        m(Select, {
+                            options: [
+                                { value: "none", label: "None" },
+                                { value: "water", label: "Water" },
+                                { value: "carbon", label: "Carbon" },
+                                { value: "methane", label: "Methane" },
+                                { value: "silicate", label: "Silicate" },
+                                { value: "iron", label: "Iron" },
+                                { value: "rocky", label: "Rocky" },
+                                { value: "helium", label: "Helium" },
+                                { value: "ammonia", label: "Ammonia" }
+                            ],
+                            oninit: () => App.data.star_type = "other",
+                            onchange: (e) => {
+                                App.data.volcanism = e.target.value;
+                                m.redraw()
+                            }
+                        }),
+                        m("h3", "Gravity"),
+                        m(InputField, {
+                            id: "max-grav",
+                            label: "Gravity (g)",
+                            type: "number",
+                            inputmode: "decimal",
+                            step: "any",
+                            onkeyup: (e) => {
+                                App.data.gravity = parseFloat(e.target.value);
+                                m.redraw()
+                            }
+                        }),
+                        m("h2", "Results"),
+                        m(Tabs, {
+                            tabs: [
+                                { title: "Possible xenobiology", content: App.filter_species() },
+                            ]
                         })
-                    ])
-                ]),
-                m("p", "An Elite Dangerous exo-biology tool"),
-                m("p", "Filter available species by the conditions of a specific system and planetary body"),
-                m("h2", "Star System"),
-                m(Select, {
-                    options: [
-                        { value: "other", label: "Other" },
-                        { value: "A", label: "A" }
-                    ],
-                    oninit: () => App.data.star_type = "other",
-                    onchange: (e) => {
-                        App.data.star_type = e.target.value;
-                        m.redraw()
-                    }
-                }),
-                m(Checkbox, {
-                    id: "nebula",
-                    label: "Local to a nebula?",
-                    oninit: () => App.data.nebula = false,
-                    onchange: (e) => {
-                        App.data.nebula = e.target.checked;
-                        m.redraw()
-                    }
-                }),
-                m("h2", "System Body"),
-                m("h3", "Atmosphere"),
-                m(Select, {
-                    options: [... new Set(App.conditions.map(
-                        (x) => x.atmosphere
-                    ).flat())].map((x) => {
-                        return { value: x, label: x }
-                    }),
-                    oninit: () => App.data.atmosphere = "",
-                    onchange: (e) => {
-                        App.data.atmosphere = e.target.value;
-                        m.redraw()
-                    }
-                }),
-                m("h3", "Body Type"),
-                m(Select, {
-                    options: [... new Set(App.conditions.map(
-                        (x) => x.planet
-                    ).flat())].map((x) => {
-                        return { value: x, label: x }
-                    }),
-                    onchange: (e) => {
-                        App.data.planet = e.target.value;
-                        m.redraw()
-                    }
-                }),
-                m("h3", "Temperature range"),
-                m(InputField, {
-                    id: "min-temp",
-                    label: "Minimum temperature (K)",
-                    onkeyup: (e) => {
-                        App.data.temp_min = ~~e.target.value;
-                        m.redraw()
-                    }
-                }),
-                m(InputField, {
-                    id: "max-temp",
-                    label: "Maximum temperature (K)",
-                    onkeyup: (e) => {
-                        App.data.temp_max = ~~e.target.value;
-                        m.redraw()
-                    }
-                }),
-                m("h3", "Body Distance"),
-                m(InputField, {
-                    id: "min-dist",
-                    label: "Distance (LS)",
-                    onkeyup: (e) => {
-                        App.data.distance = ~~e.target.value;
-                        m.redraw()
-                    }
-                }),
-                m("h3", "Volcanism Type"),
-                m(Select, {
-                    options: [
-                        { value: "none", label: "None" },
-                        { value: "water", label: "Water" },
-                        { value: "carbon", label: "Carbon" },
-                        { value: "methane", label: "Methane" },
-                        { value: "silicate", label: "Silicate" },
-                        { value: "iron", label: "Iron" },
-                        { value: "rocky", label: "Rocky" },
-                        { value: "helium", label: "Helium" },
-                        { value: "ammonia", label: "Ammonia" }
-                    ],
-                    oninit: () => App.data.star_type = "other",
-                    onchange: (e) => {
-                        App.data.volcanism = e.target.value;
-                        m.redraw()
-                    }
-                }),
-                m("h3", "Gravity"),
-                m(InputField, {
-                    id: "max-grav",
-                    label: "Gravity (g)",
-                    onkeyup: (e) => {
-                        App.data.gravity = parseFloat(e.target.value);
-                        m.redraw()
-                    }
-                }),
-                m("h2", "Results"),
-                m(Tabs, {
-                    tabs: [
-                        { title: "Possible xenobiology", content: App.filter_species() },
                     ]
-                })
-            ]
+                )]
             )
         }
 

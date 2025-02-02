@@ -280,10 +280,10 @@
             )
         }
 
-        fetch("species-conditions.json").then(
+        fetch("data/species-conditions.json").then(
             response => response.json()
         ).then(conditions => {
-            fetch("species.json").then(
+            fetch("data/species.json").then(
                 response => response.json()
             ).then(values => {
                 App.conditions = conditions;
